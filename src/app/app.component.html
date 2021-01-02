@@ -1,7 +1,7 @@
 <nav>
   <ul class="pagination">
     <li class="page-item" [ngClass]="{ disabled: currentPage === 0 }">
-      <a class="page-link">Prev</a>
+      <a (click)="currentPage = currentPage - 1" class="page-link">Prev</a>
     </li>
     <li
       class="page-item"
@@ -16,7 +16,7 @@
       class="page-item"
       [ngClass]="{ disabled: currentPage === images.length - 1 }"
     >
-      <a class="page-link">Next</a>
+      <a (click)="currentPage = currentPage + 1" class="page-link">Next</a>
     </li>
   </ul>
 </nav>
