@@ -1,4 +1,9 @@
-<div *ngFor="let image of images">
-  <p>{{ image.title }}</p>
-  <img [src]="image.url" alt="" />
-</div>
+<nav>
+  <ul class="pagination">
+    <li class="page-item" *ngFor="let image of images; let i = index">
+      <a href="" class="page-link">
+        {{ i + 1 }}
+      </a>
+    </li>
+  </ul>
+</nav>
