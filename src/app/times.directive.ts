@@ -4,5 +4,8 @@ import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
   selector: '[appTimes]',
 })
 export class TimesDirective {
-  constructor() {}
+  constructor(
+    private templateRef: TemplateRef<any>,
+    private viewContainerRef: ViewContainerRef
+  ) {}
 }
