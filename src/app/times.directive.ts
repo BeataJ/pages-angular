@@ -1,10 +1,8 @@
-import { Directive } from '@angular/core';
+import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appTimes]'
+  selector: '[appTimes]',
 })
 export class TimesDirective {
-
-  constructor() { }
-
+  constructor() {}
 }
